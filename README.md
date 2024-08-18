@@ -1,5 +1,3 @@
-# PyTorch
+# Accessing Output Privacy of Different Fine-tuning methods on LLMs
 
-Last updated: Sep 27th 2022
-
-This is the GitHub repository that acts as the default Workspace for Paperspace Gradient's PyTorch runtime.
+Author: Olivia Ma
