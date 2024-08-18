@@ -1,97 +1,72 @@
 
 Dataframe:
-     slice feature                                        slice value  \
-0   Entire dataset                                                      
-1   Entire dataset                                                      
-2   Entire dataset                                                      
-3   Entire dataset                                                      
-4   Entire dataset                                                      
-5           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-6           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-7           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-8           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-9           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-10          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-11          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-12          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-13          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
-14          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+  slice feature                                        slice value  \
+0        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+1        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+2        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+3        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+4        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+5        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+6        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+7        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+8        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+9        custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
 
-    train size  test size               attack type  Attacker advantage  \
-0        25000      25000          THRESHOLD_ATTACK            0.009960   
-1        25000      25000       LOGISTIC_REGRESSION            0.006720   
-2        25000      25000  MULTI_LAYERED_PERCEPTRON            0.008120   
-3        25000      25000             RANDOM_FOREST            0.006800   
-4        25000      25000       K_NEAREST_NEIGHBORS            0.004360   
-5        24970      24970          THRESHOLD_ATTACK            0.010092   
-6        24970      24970       LOGISTIC_REGRESSION            0.009211   
-7        24970      24970  MULTI_LAYERED_PERCEPTRON            0.006848   
-8        24970      24970             RANDOM_FOREST            0.006528   
-9        24970      24970       K_NEAREST_NEIGHBORS            0.012135   
-10          30         30          THRESHOLD_ATTACK            0.166667   
-11          30         30       LOGISTIC_REGRESSION            0.133333   
-12          30         30  MULTI_LAYERED_PERCEPTRON            0.200000   
-13          30         30             RANDOM_FOREST            0.266667   
-14          30         30       K_NEAREST_NEIGHBORS            0.166667   
+   train size  test size               attack type  Attacker advantage  \
+0       24970      24970          THRESHOLD_ATTACK            0.009411   
+1       24970      24970       LOGISTIC_REGRESSION            0.008450   
+2       24970      24970  MULTI_LAYERED_PERCEPTRON            0.003845   
+3       24970      24970             RANDOM_FOREST            0.008010   
+4       24970      24970       K_NEAREST_NEIGHBORS            0.006368   
+5          30         30          THRESHOLD_ATTACK            0.233333   
+6          30         30       LOGISTIC_REGRESSION            0.266667   
+7          30         30  MULTI_LAYERED_PERCEPTRON            0.166667   
+8          30         30             RANDOM_FOREST            0.100000   
+9          30         30       K_NEAREST_NEIGHBORS            0.133333   
 
-    Positive predictive value       AUC  Epsilon lower bound_1  \
-0                    0.617021  0.504516               0.093008   
-1                    0.505433  0.501429               0.532774   
-2                    0.632653  0.501785               0.104207   
-3                    0.524618  0.500289               0.083586   
-4                    0.514614  0.500912              -0.000066   
-5                    0.617021  0.504583               0.093009   
-6                    0.590909  0.495299               0.266569   
-7                    0.511029  0.500278               0.228567   
-8                    0.508913  0.501302               0.204986   
-9                    0.514437  0.507138               0.045604   
-10                   0.555556  0.456667              -0.036292   
-11                   1.000000  0.503333              -0.013555   
-12                   1.000000  0.426667              -0.008994   
-13                   1.000000  0.578889               0.127362   
-14                   0.575758  0.562222              -0.055295   
+   Positive predictive value       AUC  Epsilon lower bound_1  \
+0                   0.675676  0.504789               1.169187   
+1                   0.532258  0.502601               0.195656   
+2                   0.545249  0.499556               0.027975   
+3                   0.604651  0.501023               0.467374   
+4                   0.505810  0.496959               0.002548   
+5                   0.666667  0.415556               0.113847   
+6                   0.625000  0.595556               0.201478   
+7                   1.000000  0.460000               0.325710   
+8                   0.522727  0.473889              -0.036292   
+9                   1.000000  0.566667              -0.050755   
 
-    Epsilon lower bound_2  Epsilon lower bound_3  Epsilon lower bound_4  \
-0                0.090394               0.089543               0.088361   
-1                0.460039               0.409196               0.381714   
-2                0.095364               0.092729               0.092174   
-3                0.077482               0.074321               0.068224   
-4               -0.000066              -0.000914              -0.001019   
-5                0.090395               0.089544               0.088362   
-6                0.090965               0.041024               0.037863   
-7                0.221079               0.215310               0.197753   
-8                0.072328               0.066791               0.061872   
-9                0.039034               0.037714               0.018488   
-10              -0.042017              -0.050755              -0.050755   
-11              -0.041294              -0.050755              -0.050755   
-12              -0.008994              -0.013655              -0.013655   
-13               0.114523               0.099253               0.095528   
-14              -0.055295              -0.081642              -0.091391   
+   Epsilon lower bound_2  Epsilon lower bound_3  Epsilon lower bound_4  \
+0               1.052048               0.970327               0.919494   
+1               0.186793               0.184159               0.182815   
+2               0.027530               0.026493               0.025347   
+3               0.368801               0.344548               0.308705   
+4               0.000087              -0.000066              -0.000066   
+5               0.049366               0.018207               0.005830   
+6               0.168919               0.144981               0.120279   
+7               0.137408               0.099934               0.032183   
+8              -0.042017              -0.050755              -0.055295   
+9              -0.050755              -0.055295              -0.055295   
 
-    Epsilon lower bound_5  
-0                0.087501  
-1                0.380736  
-2                0.089518  
-3                0.063467  
-4               -0.001193  
-5                0.087502  
-6                0.037649  
-7                0.184957  
-8                0.058126  
-9                0.007935  
-10              -0.055295  
-11              -0.055295  
-12              -0.019393  
-13               0.055633  
-14              -0.099599  
+   Epsilon lower bound_5  
+0               0.863343  
+1               0.178744  
+2               0.025055  
+3               0.266569  
+4              -0.001922  
+5              -0.001143  
+6               0.114523  
+7               0.005399  
+8              -0.055295  
+9              -0.085471  
 
 Max AUC Attacker Result:
 SingleAttackResult(
   SliceSpec: Custom indices: slice_name = modified_indices
   DataSize: (ntrain=30, ntest=30)
-  AttackType: RANDOM_FOREST
-  AUC: 0.58
+  AttackType: LOGISTIC_REGRESSION
+  AUC: 0.60
   Attacker advantage: 0.27
-  Positive Predictive Value: 1.00
-  Epsilon lower bound: 0.1274, 0.1145, 0.0993, 0.0955, 0.0556
+  Positive Predictive Value: 0.62
+  Epsilon lower bound: 0.2015, 0.1689, 0.1450, 0.1203, 0.1145
 )
