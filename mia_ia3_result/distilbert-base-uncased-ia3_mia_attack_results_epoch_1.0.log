@@ -1,0 +1,40 @@
+
+Dataframe:
+    slice feature slice value  train size  test size  \
+0  Entire dataset                   25000      25000   
+1  Entire dataset                   25000      25000   
+2  Entire dataset                   25000      25000   
+3  Entire dataset                   25000      25000   
+4  Entire dataset                   25000      25000   
+
+                attack type  Attacker advantage  Positive predictive value  \
+0          THRESHOLD_ATTACK             0.01084                   0.571429   
+1       LOGISTIC_REGRESSION             0.01232                   0.529412   
+2  MULTI_LAYERED_PERCEPTRON             0.00612                   0.523077   
+3             RANDOM_FOREST             0.01304                   0.578947   
+4       K_NEAREST_NEIGHBORS             0.00696                   0.500000   
+
+        AUC  Epsilon lower bound_1  Epsilon lower bound_2  \
+0  0.502062               0.296883               0.242102   
+1  0.500501               0.106184               0.101305   
+2  0.500500               0.177291               0.155362   
+3  0.501039               0.081687               0.081481   
+4  0.496242              -0.000066              -0.000066   
+
+   Epsilon lower bound_3  Epsilon lower bound_4  Epsilon lower bound_5  
+0               0.216138               0.204388               0.196778  
+1               0.100439               0.099225               0.098029  
+2               0.126017               0.108106               0.101234  
+3               0.081184               0.081027               0.080977  
+4              -0.000784              -0.000799              -0.002297  
+
+Max AUC Attacker Result:
+SingleAttackResult(
+  SliceSpec: Entire dataset
+  DataSize: (ntrain=25000, ntest=25000)
+  AttackType: THRESHOLD_ATTACK
+  AUC: 0.50
+  Attacker advantage: 0.01
+  Positive Predictive Value: 0.57
+  Epsilon lower bound: 0.2969, 0.2421, 0.2161, 0.2044, 0.1968
+)

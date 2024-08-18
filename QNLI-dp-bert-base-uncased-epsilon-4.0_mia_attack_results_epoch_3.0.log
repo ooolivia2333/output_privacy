@@ -1,0 +1,97 @@
+
+Dataframe:
+     slice feature                                        slice value  \
+0   Entire dataset                                                      
+1   Entire dataset                                                      
+2   Entire dataset                                                      
+3   Entire dataset                                                      
+4   Entire dataset                                                      
+5           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+6           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+7           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+8           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+9           custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+10          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+11          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+12          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+13          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+14          custom  (array([0, 0, 0, ..., 0, 0, 0]), array([0, 0, ...   
+
+    train size  test size               attack type  Attacker advantage  \
+0        52371       5463          THRESHOLD_ATTACK            0.018946   
+1        52371       5463       LOGISTIC_REGRESSION            0.125193   
+2        52371       5463  MULTI_LAYERED_PERCEPTRON            0.143790   
+3        52371       5463             RANDOM_FOREST            0.164030   
+4        52371       5463       K_NEAREST_NEIGHBORS            0.017692   
+5        52341       5433          THRESHOLD_ATTACK            0.018897   
+6        52341       5433       LOGISTIC_REGRESSION            0.058751   
+7        52341       5433  MULTI_LAYERED_PERCEPTRON            0.143739   
+8        52341       5433             RANDOM_FOREST            0.089380   
+9        52341       5433       K_NEAREST_NEIGHBORS            0.004007   
+10          30         30          THRESHOLD_ATTACK            0.133333   
+11          30         30       LOGISTIC_REGRESSION            0.266667   
+12          30         30  MULTI_LAYERED_PERCEPTRON            0.166667   
+13          30         30             RANDOM_FOREST            0.133333   
+14          30         30       K_NEAREST_NEIGHBORS            0.166667   
+
+    Positive predictive value       AUC  Epsilon lower bound_1  \
+0                    0.971223  0.493217               0.516618   
+1                    0.978022  0.508363               2.261617   
+2                    0.981481  0.439766               0.850188   
+3                    0.966102  0.506497               0.573737   
+4                    0.917184  0.507639               0.012229   
+5                    0.971223  0.493490               0.511686   
+6                    0.950487  0.499713               0.537238   
+7                    0.967128  0.417679               1.975895   
+8                    0.947735  0.497394               0.477029   
+9                    0.909408  0.500753              -0.000133   
+10                   0.551724  0.487778               0.099934   
+11                   1.000000  0.627778               0.127362   
+12                   1.000000  0.460000              -0.017535   
+13                   1.000000  0.454444               0.099934   
+14                   0.571429  0.561111              -0.055295   
+
+    Epsilon lower bound_2  Epsilon lower bound_3  Epsilon lower bound_4  \
+0                0.509068               0.501461               0.493796   
+1                2.190774               2.187081               2.165404   
+2                0.846907               0.843615               0.840312   
+3                0.573672               0.573606               0.573541   
+4                0.011769              -0.000132              -0.000296   
+5                0.504136               0.496529               0.488863   
+6                0.537035               0.536831               0.536779   
+7                1.620828               1.378008               1.167565   
+8                0.476796               0.476563               0.476329   
+9               -0.000298              -0.002799              -0.003645   
+10               0.005399              -0.019393              -0.036292   
+11               0.114523               0.114523               0.105404   
+12              -0.019393              -0.023996              -0.036292   
+13               0.005399              -0.019393              -0.030504   
+14              -0.055295              -0.062108              -0.073781   
+
+    Epsilon lower bound_5  
+0                0.486071  
+1                2.148090  
+2                0.836999  
+3                0.573476  
+4               -0.000304  
+5                0.481138  
+6                0.536628  
+7                0.862599  
+8                0.476096  
+9               -0.004892  
+10              -0.041294  
+11               0.105404  
+12              -0.042017  
+13              -0.030504  
+14              -0.102937  
+
+Max AUC Attacker Result:
+SingleAttackResult(
+  SliceSpec: Custom indices: slice_name = modified_indices
+  DataSize: (ntrain=30, ntest=30)
+  AttackType: LOGISTIC_REGRESSION
+  AUC: 0.63
+  Attacker advantage: 0.27
+  Positive Predictive Value: 1.00
+  Epsilon lower bound: 0.1274, 0.1145, 0.1145, 0.1054, 0.1054
+)
