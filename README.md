@@ -4,8 +4,7 @@ Author: Olivia Ma
 
 Install the required library:
 ```
-!pip3 install -U tensorflow==2.14.0 tensorflow_empirical_privacy opacus
-!pip3 install -U transformers accelerate
+!pip3 install -U tensorflow==2.14.0 tensorflow_empirical_privacy==0.1.0 opacus==1.5.2 transformers==4.35.2 accelerate==0.24.1
 ```
 
 Install dp-transformers 1.0.1:
