@@ -8,11 +8,11 @@ Install the required library:
 ```
 
 Install dp-transformers 1.0.1:
-1. Clond dp-transformers from https://github.com/microsoft/dp-transformers
+1. Clone dp-transformers from https://github.com/microsoft/dp-transformers
 2. install the latest version (1.0.1) directly in the repo
 ```
 cd dp-transformers
 pip3 install .
 ```
 
-Simply run the *_main.py files for training and MIA attack.
+Run the *_main.py files for training and MIA attack.
