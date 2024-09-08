@@ -14,3 +14,5 @@ Install dp-transformers 1.0.1:
 cd dp-transformers
 pip3 install .
 ```
+
+Simply run the *_main.py files for training and MIA attack.
