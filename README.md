@@ -15,4 +15,4 @@ cd dp-transformers
 pip3 install .
 ```
 
-Run the *_main.py files for training and MIA attack.
+Run the *_main.py files for training and MIA attack, defaulting to DistilBERT with IMDB dataset.
